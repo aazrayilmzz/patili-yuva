@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sahiplendirilmeyi bekleyen dostlarımızı türe, yaşa ve şehre göre filtreleyin.">
+  <title>Patili Yuva | Sahiplen</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/main.js" defer></script>
+  <script src="js/hayvanlar.js" defer></script>
+</head>
+<body>
+  <header class="site-baslik">
+    <a href="index.html" class="logo"><span aria-hidden="true">🐾</span> Patili Yuva</a>
+
+    <button class="menu-butonu" id="menuButonu" type="button"
+            aria-label="Menüyü aç" aria-expanded="false" aria-controls="anaMenu">☰</button>
+
+    <nav class="ana-menu" id="anaMenu" aria-label="Ana menü">
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="hayvanlar.html" aria-current="page">Sahiplen</a></li>
+        <li><a href="basvuru.html">Başvuru</a></li>
+      </ul>
+    </nav>
+
+    <button class="tema-butonu" id="temaButonu" type="button" aria-label="Karanlık modu aç veya kapat">🌙</button>
+  </header>
+
+  <main>
+    <section class="sayfa-giris">
+      <h1>Yuva arayan dostlarımız</h1>
+      <p>Aradığın dostu bulmak için filtreleri kullan. Beğendiklerini kalbe basarak favorilerine ekleyebilirsin.</p>
+    </section>
+
+    <section class="filtreler" aria-label="Arama ve filtreler">
+      <div class="filtre-alani">
+        <label for="aramaKutusu">Ara</label>
+        <input type="search" id="aramaKutusu" placeholder="İsim veya cins yaz…">
+      </div>
+
+      <div class="filtre-alani">
+        <label for="turFiltresi">Tür</label>
+        <select id="turFiltresi">
+          <option value="hepsi">Hepsi</option>
+          <option value="kedi">Kedi</option>
+          <option value="köpek">Köpek</option>
+          <option value="kuş">Kuş</option>
+          <option value="tavşan">Tavşan</option>
+        </select>
+      </div>
+
+      <div class="filtre-alani">
+        <label for="yasFiltresi">Yaş</label>
+        <select id="yasFiltresi">
+          <option value="hepsi">Hepsi</option>
+          <option value="yavru">Yavru (1 yaş altı)</option>
+          <option value="genc">Genç (1-3 yaş)</option>
+          <option value="yetiskin">Yetişkin (4 yaş ve üstü)</option>
+        </select>
+      </div>
+
+      <div class="filtre-alani">
+        <label for="sehirFiltresi">Şehir</label>
+        <select id="sehirFiltresi">
+          <option value="hepsi">Hepsi</option>
+          <option value="Rize">Rize</option>
+          <option value="Trabzon">Trabzon</option>
+          <option value="İstanbul">İstanbul</option>
+          <option value="Ankara">Ankara</option>
+          <option value="İzmir">İzmir</option>
+        </select>
+      </div>
+
+      <button class="favori-filtre-butonu" id="favoriFiltreButonu" type="button" aria-pressed="false">
+        ♡ Sadece favorilerim
+      </button>
+    </section>
+
+    <p class="sonuc-bilgisi" id="sonucBilgisi" aria-live="polite"></p>
+
+    <div class="durum-mesaji" id="durumMesaji" role="status"></div>
+
+    <section class="kart-listesi" id="hayvanListesi" aria-label="Hayvan listesi"></section>
+  </main>
+
+  <footer class="site-alt">
+    <p>&copy; 2026 Patili Yuva · Azra Yılmaz</p>
+    <p>Bu site CEN303 Web Mobil Programlama dersi için hazırlanmış bir projedir; hayvanlar ve başvurular örnektir.</p>
+  </footer>
+</body>
+</html>

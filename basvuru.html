@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Patili Yuva sahiplenme başvuru formu.">
+  <title>Patili Yuva | Başvuru</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/main.js" defer></script>
+  <script src="js/basvuru.js" defer></script>
+</head>
+<body>
+  <header class="site-baslik">
+    <a href="index.html" class="logo"><span aria-hidden="true">🐾</span> Patili Yuva</a>
+
+    <button class="menu-butonu" id="menuButonu" type="button"
+            aria-label="Menüyü aç" aria-expanded="false" aria-controls="anaMenu">☰</button>
+
+    <nav class="ana-menu" id="anaMenu" aria-label="Ana menü">
+      <ul>
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="hayvanlar.html">Sahiplen</a></li>
+        <li><a href="basvuru.html" aria-current="page">Başvuru</a></li>
+      </ul>
+    </nav>
+
+    <button class="tema-butonu" id="temaButonu" type="button" aria-label="Karanlık modu aç veya kapat">🌙</button>
+  </header>
+
+  <main class="basvuru-duzeni">
+
+    <section class="basvuru-bolumu" aria-labelledby="basvuruBaslik">
+      <h1 id="basvuruBaslik">Sahiplenme başvurusu</h1>
+      <p>Formu eksiksiz doldur, gönüllülerimiz en kısa sürede seninle iletişime geçsin.</p>
+
+      <form id="basvuruFormu" class="basvuru-formu">
+        <fieldset>
+          <legend>Kişisel bilgiler</legend>
+
+          <div class="form-alani">
+            <label for="adSoyad">Ad Soyad</label>
+            <input type="text" id="adSoyad" name="adSoyad"
+                   required minlength="3" maxlength="50"
+                   autocomplete="name" aria-describedby="adSoyadHata">
+            <small class="hata-mesaji" id="adSoyadHata"></small>
+          </div>
+
+          <div class="form-alani">
+            <label for="eposta">E-posta</label>
+            <input type="email" id="eposta" name="eposta"
+                   required autocomplete="email" aria-describedby="epostaHata">
+            <small class="hata-mesaji" id="epostaHata"></small>
+          </div>
+
+          <div class="form-alani">
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon"
+                   required pattern="0[0-9]{10}" inputmode="numeric"
+                   placeholder="05xxxxxxxxx" autocomplete="tel" aria-describedby="telefonHata">
+            <small class="hata-mesaji" id="telefonHata"></small>
+          </div>
+
+          <div class="form-alani">
+            <label for="sehir">Şehir</label>
+            <select id="sehir" name="sehir" required aria-describedby="sehirHata">
+              <option value="">Seçiniz</option>
+              <option value="Rize">Rize</option>
+              <option value="Trabzon">Trabzon</option>
+              <option value="İstanbul">İstanbul</option>
+              <option value="Ankara">Ankara</option>
+              <option value="İzmir">İzmir</option>
+              <option value="Diğer">Diğer</option>
+            </select>
+            <small class="hata-mesaji" id="sehirHata"></small>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Sahiplenmek istediğin dost</legend>
+
+          <div class="form-alani">
+            <label for="hayvanSecimi">Dost</label>
+            <select id="hayvanSecimi" name="hayvan" required aria-describedby="hayvanHata">
+              <option value="">Bir dost seçin…</option>
+            </select>
+            <small class="hata-mesaji" id="hayvanHata"></small>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Yaşam koşulları</legend>
+
+          <div class="form-alani">
+            <span class="alan-basligi" id="evTipiBaslik">Ev tipi</span>
+            <div class="secenekler" role="radiogroup" aria-labelledby="evTipiBaslik" aria-describedby="evTipiHata">
+              <label><input type="radio" name="evTipi" value="apartman" required> Apartman dairesi</label>
+              <label><input type="radio" name="evTipi" value="mustakil"> Müstakil ev</label>
+              <label><input type="radio" name="evTipi" value="bahceli"> Bahçeli ev</label>
+            </div>
+            <small class="hata-mesaji" id="evTipiHata"></small>
+          </div>
+
+          <div class="form-alani">
+            <label for="deneyim">Daha önce evcil hayvan baktın mı? Biraz anlat.</label>
+            <textarea id="deneyim" name="deneyim" rows="4"
+                      required minlength="20" maxlength="500"
+                      aria-describedby="deneyimHata"></textarea>
+            <small class="hata-mesaji" id="deneyimHata"></small>
+          </div>
+        </fieldset>
+
+        <div class="form-alani onay-alani">
+          <label>
+            <input type="checkbox" id="onay" name="onay" required aria-describedby="onayHata">
+            Sahiplendiğim dosta ömür boyu bakacağımı ve gönüllülerin ev ziyaretini kabul ettiğimi onaylıyorum.
+          </label>
+          <small class="hata-mesaji" id="onayHata"></small>
+        </div>
+
+        <button type="submit" class="buton">Başvuruyu Gönder</button>
+      </form>
+
+      <div class="basari-mesaji" id="basariMesaji" role="status" hidden></div>
+    </section>
+
+    <aside class="bilgi-kutusu" aria-labelledby="sonrakiAdimBaslik">
+      <h2 id="sonrakiAdimBaslik">Başvurudan sonra ne olur?</h2>
+      <ol>
+        <li>Başvurun gönüllülerimize ulaşır.</li>
+        <li>Seninle telefonla tanışma görüşmesi yapılır.</li>
+        <li>Uygun görülürse tanışma günü planlanır.</li>
+      </ol>
+    </aside>
+  </main>
+
+  <footer class="site-alt">
+    <p>&copy; 2026 Patili Yuva · Azra Yılmaz</p>
+    <p>Bu site CEN303 Web Mobil Programlama dersi için hazırlanmış bir projedir; hayvanlar ve başvurular örnektir.</p>
+  </footer>
+</body>
+</html>

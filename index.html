@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Patili Yuva: Sahiplendirilmeyi bekleyen kedi, köpek ve diğer dostlarımızla tanışın.">
+  <title>Patili Yuva | Ana Sayfa</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <header class="site-baslik">
+    <a href="index.html" class="logo"><span aria-hidden="true">🐾</span> Patili Yuva</a>
+
+    <button class="menu-butonu" id="menuButonu" type="button"
+            aria-label="Menüyü aç" aria-expanded="false" aria-controls="anaMenu">☰</button>
+
+    <nav class="ana-menu" id="anaMenu" aria-label="Ana menü">
+      <ul>
+        <li><a href="index.html" aria-current="page">Ana Sayfa</a></li>
+        <li><a href="hayvanlar.html">Sahiplen</a></li>
+        <li><a href="basvuru.html">Başvuru</a></li>
+      </ul>
+    </nav>
+
+    <button class="tema-butonu" id="temaButonu" type="button" aria-label="Karanlık modu aç veya kapat">🌙</button>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroBaslik">
+      <div class="hero-metin">
+        <h1 id="heroBaslik">Bir pati, bir ömürlük dostluk</h1>
+        <p>
+          Patili Yuva'da kedi, köpek, kuş ve tavşan dostlarımız sıcak bir yuva bekliyor.
+          Onlarla tanış, favorilerine ekle ve tek bir formla sahiplenme başvurunu yap.
+        </p>
+        <a href="hayvanlar.html" class="buton">Patileri Tanı</a>
+      </div>
+
+      <img src="img/hero.jpg" class="hero-gorsel"
+           alt="Bir kişinin kucağında huzurla uyuyan kahverengi köpek yavrusu">
+    </section>
+
+    <section class="adimlar" aria-labelledby="adimlarBaslik">
+      <h2 id="adimlarBaslik">Nasıl sahiplenirim?</h2>
+
+      <div class="adim-listesi">
+        <article class="adim">
+          <span class="adim-no" aria-hidden="true">1</span>
+          <h3>Tanış</h3>
+          <p>Sahiplen sayfasında türe, yaşa ve şehre göre arama yap, sana uygun dostu bul.</p>
+        </article>
+
+        <article class="adim">
+          <span class="adim-no" aria-hidden="true">2</span>
+          <h3>Başvur</h3>
+          <p>Kartındaki "Sahiplen" butonuna bas, başvuru formunu doldur.</p>
+        </article>
+
+        <article class="adim">
+          <span class="adim-no" aria-hidden="true">3</span>
+          <h3>Yuvana götür</h3>
+          <p>Gönüllülerimiz seninle iletişime geçer, tanışma gününü birlikte planlarız.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="sss" aria-labelledby="sssBaslik">
+      <h2 id="sssBaslik">Sık sorulan sorular</h2>
+
+      <details>
+        <summary>Sahiplenmek ücretli mi?</summary>
+        <p>Hayır. Patili Yuva'daki bütün dostlarımız ücretsiz sahiplendirilir.</p>
+      </details>
+
+      <details>
+        <summary>Başka bir şehirdeysem başvurabilir miyim?</summary>
+        <p>Evet. Başvuru formunda şehrini belirtmen yeterli, ulaşım konusunu birlikte planlarız.</p>
+      </details>
+
+      <details>
+        <summary>Hayvanların aşıları yapılmış mı?</summary>
+        <p>Her kartta aşı durumu yazar. Yavruların aşı takvimi sahiplendikten sonra da devam eder.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-alt">
+    <p>&copy; 2026 Patili Yuva · Azra Yılmaz</p>
+    <p>Bu site CEN303 Web Mobil Programlama dersi için hazırlanmış bir projedir; hayvanlar ve başvurular örnektir.</p>
+  </footer>
+</body>
+</html>
