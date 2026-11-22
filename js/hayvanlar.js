@@ -1,8 +1,15 @@
 const hayvanListesi = document.getElementById("hayvanListesi");
 const durumMesaji = document.getElementById("durumMesaji");
 const sonucBilgisi = document.getElementById("sonucBilgisi");
+const aramaKutusu = document.getElementById("aramaKutusu");
+const turFiltresi = document.getElementById("turFiltresi");
+const yasFiltresi = document.getElementById("yasFiltresi");
+const sehirFiltresi = document.getElementById("sehirFiltresi");
+const favoriFiltreButonu = document.getElementById("favoriFiltreButonu");
 
 let tumHayvanlar = [];
+let favoriler = JSON.parse(localStorage.getItem("favoriler")) || [];
+let sadeceFavoriler = false;
 
 async function hayvanlariGetir() {
   durumMesaji.textContent = "Patiler yükleniyor…";
@@ -69,10 +76,17 @@ function kartOlustur(hayvan) {
   const favoriButonu = document.createElement("button");
   favoriButonu.type = "button";
   favoriButonu.className = "favori-butonu";
-  favoriButonu.dataset.id = hayvan.id;
-  favoriButonu.setAttribute("aria-pressed", "false");
   favoriButonu.setAttribute("aria-label", hayvan.ad + ": favorilere ekle");
-  favoriButonu.textContent = "♡";
+  kalbiGuncelle(favoriButonu, favoriMi(hayvan.id));
+
+  favoriButonu.addEventListener("click", function () {
+    favoriDegistir(hayvan.id);
+    kalbiGuncelle(favoriButonu, favoriMi(hayvan.id));
+
+    if (sadeceFavoriler) {
+      filtrele();
+    }
+  });
 
   const sahiplenLinki = document.createElement("a");
   sahiplenLinki.className = "buton";
@@ -108,19 +122,35 @@ function listeyiGoster(liste) {
     hayvanListesi.appendChild(kartOlustur(hayvan));
   });
 
-  if (liste.length === 0) {
-    sonucBilgisi.textContent = "Aradığın özelliklerde bir dost bulunamadı. Filtreleri değiştirmeyi dene.";
-  } else {
+  if (liste.length > 0) {
     sonucBilgisi.textContent = liste.length + " dost listeleniyor";
+  } else if (sadeceFavoriler && favoriler.length === 0) {
+    sonucBilgisi.textContent = "Henüz favorin yok. Beğendiğin dostların kalbine basarak ekleyebilirsin.";
+  } else {
+    sonucBilgisi.textContent = "Aradığın özelliklerde bir dost bulunamadı. Filtreleri değiştirmeyi dene.";
   }
 }
 
-hayvanlariGetir();
+function favoriMi(id) {
+  return favoriler.includes(id);
+}
 
-const aramaKutusu = document.getElementById("aramaKutusu");
-const turFiltresi = document.getElementById("turFiltresi");
-const yasFiltresi = document.getElementById("yasFiltresi");
-const sehirFiltresi = document.getElementById("sehirFiltresi");
+function favoriDegistir(id) {
+  if (favoriMi(id)) {
+    favoriler = favoriler.filter(function (favoriId) {
+      return favoriId !== id;
+    });
+  } else {
+    favoriler.push(id);
+  }
+
+  localStorage.setItem("favoriler", JSON.stringify(favoriler));
+}
+
+function kalbiGuncelle(buton, favorideMi) {
+  buton.setAttribute("aria-pressed", favorideMi);
+  buton.textContent = favorideMi ? "♥" : "♡";
+}
 
 function yasGrubu(yas) {
   if (yas === 0) {
@@ -145,8 +175,9 @@ function filtrele() {
     const turUyuyor = secilenTur === "hepsi" || hayvan.tur === secilenTur;
     const yasUyuyor = secilenYas === "hepsi" || yasGrubu(hayvan.yas) === secilenYas;
     const sehirUyuyor = secilenSehir === "hepsi" || hayvan.sehir === secilenSehir;
+    const favoriUyuyor = !sadeceFavoriler || favoriMi(hayvan.id);
 
-    return aramaUyuyor && turUyuyor && yasUyuyor && sehirUyuyor;
+    return aramaUyuyor && turUyuyor && yasUyuyor && sehirUyuyor && favoriUyuyor;
   });
 
   listeyiGoster(sonuc);
@@ -156,3 +187,12 @@ aramaKutusu.addEventListener("input", filtrele);
 turFiltresi.addEventListener("change", filtrele);
 yasFiltresi.addEventListener("change", filtrele);
 sehirFiltresi.addEventListener("change", filtrele);
+
+favoriFiltreButonu.addEventListener("click", function () {
+  sadeceFavoriler = !sadeceFavoriler;
+  kalbiGuncelle(favoriFiltreButonu, sadeceFavoriler);
+  favoriFiltreButonu.textContent = (sadeceFavoriler ? "♥" : "♡") + " Sadece favorilerim";
+  filtrele();
+});
+
+hayvanlariGetir();
