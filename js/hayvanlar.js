@@ -116,3 +116,43 @@ function listeyiGoster(liste) {
 }
 
 hayvanlariGetir();
+
+const aramaKutusu = document.getElementById("aramaKutusu");
+const turFiltresi = document.getElementById("turFiltresi");
+const yasFiltresi = document.getElementById("yasFiltresi");
+const sehirFiltresi = document.getElementById("sehirFiltresi");
+
+function yasGrubu(yas) {
+  if (yas === 0) {
+    return "yavru";
+  }
+  if (yas <= 3) {
+    return "genc";
+  }
+  return "yetiskin";
+}
+
+function filtrele() {
+  const aranan = aramaKutusu.value.trim().toLocaleLowerCase("tr");
+  const secilenTur = turFiltresi.value;
+  const secilenYas = yasFiltresi.value;
+  const secilenSehir = sehirFiltresi.value;
+
+  const sonuc = tumHayvanlar.filter(function (hayvan) {
+    const aramaMetni = (hayvan.ad + " " + hayvan.cins).toLocaleLowerCase("tr");
+
+    const aramaUyuyor = aramaMetni.includes(aranan);
+    const turUyuyor = secilenTur === "hepsi" || hayvan.tur === secilenTur;
+    const yasUyuyor = secilenYas === "hepsi" || yasGrubu(hayvan.yas) === secilenYas;
+    const sehirUyuyor = secilenSehir === "hepsi" || hayvan.sehir === secilenSehir;
+
+    return aramaUyuyor && turUyuyor && yasUyuyor && sehirUyuyor;
+  });
+
+  listeyiGoster(sonuc);
+}
+
+aramaKutusu.addEventListener("input", filtrele);
+turFiltresi.addEventListener("change", filtrele);
+yasFiltresi.addEventListener("change", filtrele);
+sehirFiltresi.addEventListener("change", filtrele);
