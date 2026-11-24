@@ -11,7 +11,7 @@
     "etiketler": ["oyuncu", "insan canlısı"],
     "aciklama": "Kucakta uyumayı ve tüy topu kovalamayı çok seviyor. Diğer kedilerle iyi anlaşıyor.",
     "foto": "img/tarcin.jpg",
-    "alt": "Yeşil gözlü, kahverengi çizgili tekir kedi Tarçın"
+    "alt": "Sarı-yeşil gözlü, beyaz göğüslü tekir kedi Tarçın"
   },
   {
     "id": 2,
@@ -53,13 +53,13 @@
     "etiketler": ["sakin", "bahçe ister"],
     "aciklama": "Sakin ve koruyucu bir dev. Geniş bir bahçede yaşamaya ihtiyacı var.",
     "foto": "img/pasa.jpg",
-    "alt": "Krem rengi tüylü, iri yapılı Anadolu çoban köpeği Paşa"
+    "alt": "Çimenlere uzanmış, krem rengi Anadolu çoban köpeği Paşa"
   },
   {
     "id": 5,
     "ad": "Pamuk",
     "tur": "tavşan",
-    "cins": "Sarkık kulaklı",
+    "cins": "Melez",
     "yas": 1,
     "cinsiyet": "dişi",
     "sehir": "İzmir",
@@ -67,7 +67,7 @@
     "etiketler": ["sessiz ortam sever"],
     "aciklama": "Havuca bayılıyor. Her gün birkaç saat kafes dışında gezmesi gerekiyor.",
     "foto": "img/pamuk.jpg",
-    "alt": "Sarkık kulaklı, bembeyaz tavşan Pamuk"
+    "alt": "Çimenlerin arasında oturan, dik kulaklı bembeyaz tavşan Pamuk"
   },
   {
     "id": 6,
@@ -87,7 +87,7 @@
     "id": 7,
     "ad": "Boncuk",
     "tur": "köpek",
-    "cins": "Terrier melezi",
+    "cins": "Kaniş melezi",
     "yas": 2,
     "cinsiyet": "dişi",
     "sehir": "Trabzon",
@@ -95,7 +95,7 @@
     "etiketler": ["apartmana uygun", "cesur"],
     "aciklama": "Küçük ama cesur. Apartman hayatına çok uygun, kısa yürüyüşler yetiyor.",
     "foto": "img/boncuk.jpg",
-    "alt": "Kıvırcık gri tüylü, küçük boyutlu köpek Boncuk"
+    "alt": "Dilini çıkarmış, kıvırcık gri-siyah tüylü küçük köpek Boncuk"
   },
   {
     "id": 8,
@@ -116,14 +116,14 @@
     "ad": "Şans",
     "tur": "köpek",
     "cins": "Melez",
-    "yas": 6,
+    "yas": 0,
     "cinsiyet": "erkek",
     "sehir": "İstanbul",
     "asili": true,
-    "etiketler": ["özel bakım", "sakin"],
-    "aciklama": "Bir kazada ön bacağını kaybetti ama bu onu hiç durdurmuyor. Sevgi dolu, sakin bir dost.",
+    "etiketler": ["yavru", "sevgi dolu"],
+    "aciklama": "Meraklı bakışlarıyla herkesin kalbini kazanıyor. Oyun oynamaya ve sevilmeye bayılıyor.",
     "foto": "img/sans.jpg",
-    "alt": "Üç bacaklı, siyah beyaz melez köpek Şans"
+    "alt": "Siyah beyaz tüylü yavru köpek Şans"
   },
   {
     "id": 10,
@@ -151,20 +151,20 @@
     "etiketler": ["yavru", "enerjik"],
     "aciklama": "3 aylık, enerjisi hiç bitmiyor. Tuvalet eğitimine yeni başladı.",
     "foto": "img/badem.jpg",
-    "alt": "Kahverengi, kulakları düşük yavru köpek Badem"
+    "alt": "Kıvırcık kahverengi tüylü, kulakları düşük yavru köpek Badem"
   },
   {
     "id": 12,
     "ad": "Limon",
     "tur": "kuş",
-    "cins": "Kanarya",
+    "cins": "Papağan",
     "yas": 2,
     "cinsiyet": "erkek",
     "sehir": "Ankara",
     "asili": true,
-    "etiketler": ["şarkı söyler"],
-    "aciklama": "Sabahları şarkı söyleyerek evi neşelendiriyor.",
+    "etiketler": ["neşeli"],
+    "aciklama": "Sabahları cıvıldayarak evi neşelendiriyor.",
     "foto": "img/limon.jpg",
-    "alt": "Parlak sarı tüylü kanarya Limon"
+    "alt": "Bir elin parmaklarında duran, sarı tüylü küçük papağan Limon"
   }
 ]
