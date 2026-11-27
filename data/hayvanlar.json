@@ -1,5 +1,19 @@
 [
   {
+    "id": 13,
+    "ad": "Fida",
+    "tur": "kedi",
+    "cins": "British Shorthair",
+    "yas": 3,
+    "cinsiyet": "dişi",
+    "sehir": "Rize",
+    "asili": true,
+    "etiketler": ["sakin", "meraklı"],
+    "aciklama": "Kocaman sarı gözleriyle etrafı merakla izliyor. Bahçede oturup yeşillikleri seyretmeye bayılıyor.",
+    "foto": "img/fida.jpg",
+    "alt": "Pembe tasmalı, sarı gözlü gri British Shorthair kedi Fida"
+  },
+  {
     "id": 1,
     "ad": "Tarçın",
     "tur": "kedi",
