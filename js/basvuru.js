@@ -61,6 +61,30 @@ function kontrol(alan, dogruMu, mesaj) {
   return dogruMu;
 }
 
+function taslagiKaydet() {
+  const taslak = {
+    adSoyad: adSoyad.value,
+    eposta: eposta.value,
+    telefon: telefon.value,
+    sehir: sehir.value,
+    deneyim: deneyim.value
+  };
+
+  localStorage.setItem("basvuruTaslagi", JSON.stringify(taslak));
+}
+
+function taslagiYukle() {
+  const taslak = JSON.parse(localStorage.getItem("basvuruTaslagi"));
+
+  if (taslak) {
+    adSoyad.value = taslak.adSoyad || "";
+    eposta.value = taslak.eposta || "";
+    telefon.value = taslak.telefon || "";
+    sehir.value = taslak.sehir || "";
+    deneyim.value = taslak.deneyim || "";
+  }
+}
+
 function formuKontrolEt() {
   const epostaKalibi = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   const telefonKalibi = /^0[0-9]{10}$/;
@@ -89,6 +113,8 @@ basvuruFormu.addEventListener("submit", function (olay) {
     return;
   }
 
+  localStorage.removeItem("basvuruTaslagi");
+
   const secilenHayvan = hayvanlar.find(function (hayvan) {
     return String(hayvan.id) === hayvanSecimi.value;
   });
@@ -107,6 +133,9 @@ basvuruFormu.addEventListener("input", function (olay) {
   if (alan) {
     hataYaz(alan, "");
   }
+
+  taslagiKaydet();
 });
 
 hayvanSecenekleriniDoldur();
+taslagiYukle();
