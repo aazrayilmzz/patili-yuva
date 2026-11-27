@@ -9,7 +9,7 @@
     "sehir": "Rize",
     "asili": true,
     "etiketler": ["sakin", "meraklı"],
-    "aciklama": "Kocaman sarı gözleriyle etrafı merakla izliyor. Bahçede oturup yeşillikleri seyretmeye bayılıyor.",
+    "aciklama": "Yeni bir yere girince önce oturup her şeyi uzun uzun izliyor, sonra kendine bir köşe seçiyor. Kucağa hemen gelmez ama güvendiği insanın yanından da ayrılmaz. Sakin bir ev ona çok iyi gelir.",
     "foto": "img/fida.jpg",
     "alt": "Pembe tasmalı, sarı gözlü gri British Shorthair kedi Fida"
   },
@@ -23,7 +23,7 @@
     "sehir": "Rize",
     "asili": true,
     "etiketler": ["oyuncu", "insan canlısı"],
-    "aciklama": "Kucakta uyumayı ve tüy topu kovalamayı çok seviyor. Diğer kedilerle iyi anlaşıyor.",
+    "aciklama": "İlk geldiği gün dolabın arkasından çıkmadı, şimdi kim otursa kucağına kıvrılıyor. Tüy topunu görünce yerinde duramıyor. Onu oyunla ve sevgiyle karşılayacak bir yuva arıyoruz.",
     "foto": "img/tarcin.jpg",
     "alt": "Sarı-yeşil gözlü, beyaz göğüslü tekir kedi Tarçın"
   },
@@ -37,7 +37,7 @@
     "sehir": "İstanbul",
     "asili": true,
     "etiketler": ["çocuklarla iyi", "enerjik"],
-    "aciklama": "Uzun yürüyüşlerin en sadık yol arkadaşı. Bahçeli bir ev onu çok mutlu eder.",
+    "aciklama": "Tasmayı eline aldığını görünce kapının önüne koşuyor. Topu kaç kere atarsan o kadar getiriyor, ziyarete gelen çocuklar ondan ayrılmak istemiyor. Uzun yürüyüşlere çıkacak, mümkünse bahçeli bir aile onu çok mutlu eder.",
     "foto": "img/karamel.jpg",
     "alt": "Açık kahverengi tüylü, dilini çıkarmış gülümseyen köpek Karamel"
   },
@@ -51,7 +51,7 @@
     "sehir": "Trabzon",
     "asili": false,
     "etiketler": ["yavru", "meraklı"],
-    "aciklama": "4 aylık. İlk aşıları yapıldı, aşı takvimi sahiplendikten sonra da devam edecek.",
+    "aciklama": "Sokakta gözleri iltihaplı bulundu. Damla tedavisi bitmek üzere ve gözleri artık pırıl pırıl. 4 aylık, ilk aşıları yapıldı; kalan aşılarını yeni ailesiyle tamamlayacak.",
     "foto": "img/zeytin.jpg",
     "alt": "Sarı gözlü, simsiyah yavru kedi Zeytin"
   },
@@ -65,7 +65,7 @@
     "sehir": "Ankara",
     "asili": true,
     "etiketler": ["sakin", "bahçe ister"],
-    "aciklama": "Sakin ve koruyucu bir dev. Geniş bir bahçede yaşamaya ihtiyacı var.",
+    "aciklama": "Sol arka bacağında eski bir kırık var. İlaçları ve aylık kontrolleri sürüyor, bu yüzden koşmak yerine sakin yürüyüşler yapmalı. Kendi halinde, yumuşak huylu bir dev; bahçesinde huzurla yaşayacağı bir yuva bekliyor.",
     "foto": "img/pasa.jpg",
     "alt": "Çimenlere uzanmış, krem rengi Anadolu çoban köpeği Paşa"
   },
@@ -79,7 +79,7 @@
     "sehir": "İzmir",
     "asili": true,
     "etiketler": ["sessiz ortam sever"],
-    "aciklama": "Havuca bayılıyor. Her gün birkaç saat kafes dışında gezmesi gerekiyor.",
+    "aciklama": "Dişleri hızlı uzadığı için ayda bir veteriner kontrolüne gitmesi gerekiyor, onun dışında sapasağlam. Havuç poşetinin sesini duyunca kulakları dikiliyor. Gürültüsüz, her gün biraz serbest dolaşabileceği bir ev arıyoruz.",
     "foto": "img/pamuk.jpg",
     "alt": "Çimenlerin arasında oturan, dik kulaklı bembeyaz tavşan Pamuk"
   },
@@ -93,7 +93,7 @@
     "sehir": "Rize",
     "asili": true,
     "etiketler": ["konuşkan"],
-    "aciklama": "Islık çalmayı öğreniyor. Kafesi ve oyuncaklarıyla birlikte sahiplendirilecek.",
+    "aciklama": "Gönüllülerimizden biri her sabah ona ıslık çalıyor, o da artık aynı melodiyle cevap veriyor. Kafesi ve oyuncaklarıyla birlikte yeni evine gidecek.",
     "foto": "img/fistik.jpg",
     "alt": "Yeşil ve sarı tüylü muhabbet kuşu Fıstık"
   },
@@ -107,7 +107,7 @@
     "sehir": "Trabzon",
     "asili": true,
     "etiketler": ["apartmana uygun", "cesur"],
-    "aciklama": "Küçük ama cesur. Apartman hayatına çok uygun, kısa yürüyüşler yetiyor.",
+    "aciklama": "Boyu küçük ama kapı çalınınca evi ilk o koruyor. Kısa yürüyüşler ona yetiyor, apartman dairesinde rahatça yaşar. Kucağa alınmaya bayılıyor.",
     "foto": "img/boncuk.jpg",
     "alt": "Dilini çıkarmış, kıvırcık gri-siyah tüylü küçük köpek Boncuk"
   },
@@ -121,7 +121,7 @@
     "sehir": "Ankara",
     "asili": true,
     "etiketler": ["sakin", "tek kedi olmalı"],
-    "aciklama": "Sakin ve meraklı. Sessiz bir evde, tek kedi olarak yaşamayı tercih ediyor.",
+    "aciklama": "Ağzındaki iltihap için tedavi görüyor; şimdilik yumuşak mama yiyor ve iki haftada bir kontrole gidiyor. Başka kedilerle anlaşamıyor, evin tek kedisi olmak istiyor. Sessiz bir evde, sabırlı biriyle çok rahat edecek.",
     "foto": "img/duman.jpg",
     "alt": "Bir gözü mavi bir gözü kehribar renkli, beyaz Van kedisi Duman"
   },
@@ -135,7 +135,7 @@
     "sehir": "İstanbul",
     "asili": true,
     "etiketler": ["yavru", "sevgi dolu"],
-    "aciklama": "Meraklı bakışlarıyla herkesin kalbini kazanıyor. Oyun oynamaya ve sevilmeye bayılıyor.",
+    "aciklama": "Bir sabah kapımızın önünde, karton bir kutunun içinde bulundu; adını da o yüzden Şans koyduk. Herkesin peşinden koşuyor, kucağa alınınca hemen uyuyor. Onunla oyun oynayacak ve sabırla eğitecek bir aile bekliyor.",
     "foto": "img/sans.jpg",
     "alt": "Siyah beyaz tüylü yavru köpek Şans"
   },
@@ -149,7 +149,7 @@
     "sehir": "İzmir",
     "asili": true,
     "etiketler": ["konuşkan", "bakım ister"],
-    "aciklama": "Uzun beyaz tüyleri düzenli taranmalı. Çok konuşkan, eve gelen herkesi karşılıyor.",
+    "aciklama": "Mama saatini hiç kaçırmıyor, kabı boşsa miyavlayarak haber veriyor. Uzun tüyleri haftada birkaç kez taranmalı. Kapıdan gireni karşılamayı ve onunla uzun uzun konuşmayı seviyor.",
     "foto": "img/lokum.jpg",
     "alt": "Uzun beyaz tüylü Ankara kedisi Lokum"
   },
@@ -163,7 +163,7 @@
     "sehir": "Rize",
     "asili": false,
     "etiketler": ["yavru", "enerjik"],
-    "aciklama": "3 aylık, enerjisi hiç bitmiyor. Tuvalet eğitimine yeni başladı.",
+    "aciklama": "3 aylık ve enerjisi hiç bitmiyor. Tuvalet eğitimine yeni başladı; ilk aşıları yapıldı, kalanlar yeni ailesiyle devam edecek. Ona sabırlı bir ev arkadaşı lazım.",
     "foto": "img/badem.jpg",
     "alt": "Kıvırcık kahverengi tüylü, kulakları düşük yavru köpek Badem"
   },
@@ -177,7 +177,7 @@
     "sehir": "Ankara",
     "asili": true,
     "etiketler": ["neşeli"],
-    "aciklama": "Sabahları cıvıldayarak evi neşelendiriyor.",
+    "aciklama": "Sabah güneşi kafesine vurunca cıvıldamaya başlıyor, evin çalar saati gibi. Parmağa konmayı öğrendi ama hâlâ biraz ürkek. Ona yavaş yavaş, sabırla yaklaşacak birini bekliyor.",
     "foto": "img/limon.jpg",
     "alt": "Bir elin parmaklarında duran, sarı tüylü küçük papağan Limon"
   }
