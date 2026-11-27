@@ -81,6 +81,7 @@ function kartOlustur(hayvan) {
 
   favoriButonu.addEventListener("click", function () {
     favoriDegistir(hayvan.id);
+    sayaciGuncelle();
     kalbiGuncelle(favoriButonu, favoriMi(hayvan.id));
 
     if (sadeceFavoriler) {
@@ -152,6 +153,11 @@ function kalbiGuncelle(buton, favorideMi) {
   buton.textContent = favorideMi ? "♥" : "♡";
 }
 
+function sayaciGuncelle() {
+  const kalp = sadeceFavoriler ? "♥" : "♡";
+  favoriFiltreButonu.textContent = kalp + " Sadece favorilerim (" + favoriler.length + ")";
+}
+
 function yasGrubu(yas) {
   if (yas === 0) {
     return "yavru";
@@ -191,8 +197,9 @@ sehirFiltresi.addEventListener("change", filtrele);
 favoriFiltreButonu.addEventListener("click", function () {
   sadeceFavoriler = !sadeceFavoriler;
   kalbiGuncelle(favoriFiltreButonu, sadeceFavoriler);
-  favoriFiltreButonu.textContent = (sadeceFavoriler ? "♥" : "♡") + " Sadece favorilerim";
+  sayaciGuncelle();
   filtrele();
 });
 
-hayvanlariGetir();
+hayvanlariGetir(); 
+sayaciGuncelle();
